@@ -1,0 +1,58 @@
+
+User::create([
+    'name'=>'febi',
+    'email'=>'febi@gmail.com',
+    'password'=>bcrypt('12345')
+])
+
+Registration::create([
+    'user_id' => 2,
+    'nama' => 'Febrianti Fatikasari',
+    'no_tlp' => '081230019050',
+    'tmpt_lahir' => 'Jakarta',
+    'tgl_lahir' => '21-02-1999',
+    'jkel' => 'Perempuan',
+    'umur' => '22',
+    'agama' => 'Islam',
+    'alamat' => 'Jakarta, Indonesia',
+    'tmpt_latihan' => 'Global Islamic School',
+    'sabuk' => 'Putih',
+    'rw_penyakit' => '-',
+    'beratbadan' => '75',
+])
+
+Nilaisiswa::create([
+    'registration_id' => 2,
+    'nama' => 'Febrianti Fatikasari',
+    'kelas' => '2A',
+    'kyorugi' => 88,
+    'poomsae' => 79,
+    'kyukpa' => 99,
+    'naikke' => 'Kuning'
+])
+
+Coach::create([
+    'nama' => 'Mohammad Fajar Alfarizy',
+    'umur' => 22,
+    'tmpt_lahir' => 'Jakarta',
+    'tgl_lahir' => '03-06-1999',
+    'jkel' => 'Laki-laki',
+    'agama' => 'Islam',
+    'alamat' => 'Jakarta, Indonesia',
+    'no_tlp' => '081230019040',
+    'sabuk' => 'Hitam',
+    'aboutme' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident consequuntur beatae facilis incidunt voluptates non mollitia alias, reprehenderit delectus.'
+])
+
+Schedule::create([
+    'nama_pelatih' => 'Mohammad Fajar Alfarizy',
+    'nama_sekolah' => 'Buahati Islamic School',
+    'alamat_sekolah' => 'Jakarta, Indonesia',
+    'hari' => 'Senin',
+    'jam' => '07.00'
+])
+
+Socialsharing::create([
+    'nama' => 'Febrianti Fatikasari',
+    'pesan' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius maxime libero excepturi a at veritatis blanditiis praesentium doloribus, placeat consequatur incidunt laborum soluta atque! Velit tempore ducimus maxime veritatis nam temporibus, officiis suscipit reiciendis molestias ratione dolorum asperiores ad praesentium optio necessitatibus labore iusto nesciunt! Dolore, earum? Animi, assumenda vero!'
+])
